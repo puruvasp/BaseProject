@@ -14,7 +14,7 @@ public class EmailUtility {
     public void sendOtpEmail(String toEmail, String otp) {
         SimpleMailMessage message = new SimpleMailMessage();
         message.setTo(toEmail);
-        message.setSubject("S2P Password Reset OTP");
+        message.setSubject("Password Reset OTP");
         message.setText("Your OTP for password reset is: " + otp + "\nIt is valid for 10 minutes.");
         mailSender.send(message);
     }
