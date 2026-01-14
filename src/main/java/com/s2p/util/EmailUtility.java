@@ -11,6 +11,7 @@ public class EmailUtility {
 
     private final JavaMailSender mailSender;
 
+
     public void sendOtpEmail(String toEmail, String otp) {
         SimpleMailMessage message = new SimpleMailMessage();
         message.setTo(toEmail);
