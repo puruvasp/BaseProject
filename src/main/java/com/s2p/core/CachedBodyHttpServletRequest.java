@@ -20,7 +20,6 @@ public class CachedBodyHttpServletRequest extends HttpServletRequestWrapper {
         InputStream requestInputStream = request.getInputStream();
         this.cachedBody = requestInputStream.readAllBytes(); // cache body
     }
-
     @Override
     public ServletInputStream getInputStream() {
         ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(this.cachedBody);
