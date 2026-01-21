@@ -33,7 +33,6 @@ public class CachedBodyHttpServletResponse extends HttpServletResponseWrapper
         writer.flush(); // make sure everything is written
         return cachedContent.toByteArray();
     }
-
     private class CachedServletOutputStream extends ServletOutputStream {
         @Override
         public boolean isReady() { return true; }
