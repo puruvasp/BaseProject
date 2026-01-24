@@ -17,7 +17,6 @@ public class OtpService {
         otpStore.put(email, new OtpData(otp, LocalDateTime.now().plusMinutes(5)));
         return otp;
     }
-
     public boolean validateOtp(String email, String otp) {
         OtpData data = otpStore.get(email);
         if (data == null) return false;
