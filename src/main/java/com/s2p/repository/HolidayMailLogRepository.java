@@ -10,4 +10,5 @@ public interface HolidayMailLogRepository
 
     boolean existsByUserIdAndHolidayIdAndSentDate(
             Long userId, Long holidayId, LocalDate sentDate);
+
 }
