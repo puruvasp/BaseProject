@@ -28,7 +28,6 @@ public class OtpService {
         if (isValid) otpStore.remove(email);
         return isValid;
     }
-
     private record OtpData(String otp, LocalDateTime expiry)
     {
 
