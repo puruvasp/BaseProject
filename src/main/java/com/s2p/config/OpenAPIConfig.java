@@ -26,7 +26,6 @@ public class OpenAPIConfig
                         .bearerFormat("JWT")
                 ));
 
-
         return openAPI;
     }
 }
