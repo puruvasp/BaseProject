@@ -13,7 +13,6 @@ import java.util.Base64;
 
 public class RequestBeforeValidation implements Filter
 {
-
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
         HttpServletRequest req = (HttpServletRequest) request;
