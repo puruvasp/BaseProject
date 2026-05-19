@@ -1,6 +1,5 @@
 package com.s2p.controller;
 
-
 import com.s2p.service.HolidayNotificationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
