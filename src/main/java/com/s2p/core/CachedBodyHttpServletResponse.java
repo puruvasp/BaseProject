@@ -10,7 +10,6 @@ import java.io.PrintWriter;
 
 public class CachedBodyHttpServletResponse extends HttpServletResponseWrapper
 {
-
     private final ByteArrayOutputStream cachedContent = new ByteArrayOutputStream();
     private final ServletOutputStream outputStream = new CachedServletOutputStream();
     private PrintWriter writer = new PrintWriter(cachedContent);
