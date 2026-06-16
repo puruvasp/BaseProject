@@ -41,7 +41,6 @@ public class RequestLoggingFilter extends OncePerRequestFilter
         }finally {
             // Post Processing
             String responseBody = new String(cachedResponse.getCachedBody(), response.getCharacterEncoding());
-
         }
 
     }
