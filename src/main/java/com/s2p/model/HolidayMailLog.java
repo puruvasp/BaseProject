@@ -26,5 +26,4 @@ public class HolidayMailLog {
     private Long holidayId;
 
     private LocalDate sentDate;
-
 }
