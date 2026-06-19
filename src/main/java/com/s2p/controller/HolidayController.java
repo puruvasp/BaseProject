@@ -24,7 +24,6 @@ public class HolidayController {
         excelService.upload(file);
         return "Excel uploaded successfully";
     }
-
     @PostMapping("/upload/pdf")
     public String uploadPdf(@RequestParam MultipartFile file) {
         pdfService.upload(file);
