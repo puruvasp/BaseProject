@@ -51,5 +51,4 @@ public class CachedBodyHttpServletRequest extends HttpServletRequestWrapper {
     public BufferedReader getReader() {
         return new BufferedReader(new InputStreamReader(getInputStream()));
     }
-
 }
