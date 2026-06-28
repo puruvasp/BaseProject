@@ -46,7 +46,6 @@ public class CachedBodyHttpServletRequest extends HttpServletRequestWrapper {
             }
         };
     }
-
     @Override
     public BufferedReader getReader() {
         return new BufferedReader(new InputStreamReader(getInputStream()));
