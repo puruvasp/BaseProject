@@ -34,7 +34,6 @@ public class RequestLoggingFilter extends OncePerRequestFilter
         requestLog.setBody(requestBody);
 
         // Write The Logic To Persist The API Request Log
-
         // Business Logic Flow
         try {
             filterChain.doFilter(cachedRequest, response);
