@@ -37,7 +37,7 @@ public class CachedBodyHttpServletResponse extends HttpServletResponseWrapper
         public boolean isReady() { return true; }
 
         @Override
-        public void setWriteListener(WriteListener listener) { }
+        public void setWriteListener(WriteListener listener) {  }
 
         @Override
         public void write(int b) throws IOException {
